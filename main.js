@@ -19,7 +19,7 @@ btnStart.onclick = () => {
   if (Number(inputNumber.value) === 0) {
     playColor.innerHTML = "green";
   } else {
-    playColor.innerHTML = inputNumber.value % 2 === 0 ? "red" : "black";
+    playColor.innerHTML = inputNumber.value % 2 === 0 ? "black" : "red";
   }
 
   circle.style.transform = "rotate(0deg)";
@@ -33,7 +33,7 @@ btnStart.onclick = () => {
     if (Number(winNumber) === 0) {
       winColor.innerHTML = "green";
     } else {
-      winColor.innerHTML = winNumber % 2 === 0 ? "red" : "black";
+      winColor.innerHTML = winNumber % 2 === 0 ? "black" : "red";
     }
     winNumberSpan.innerHTML = winNumber;
     inputNumber.value = "";
